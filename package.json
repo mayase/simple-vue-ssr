@@ -1,0 +1,45 @@
+{
+  "name": "ssr-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --progress --inline --hot --history-api-fallback --content-base build/dev --open",
+    "server": "node ./server.js",
+    "build": "BUNDLE_MODE=build_client webpack && BUNDLE_MODE=build_server webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "es6-promise": "^4.0.5",
+    "express": "^4.14.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.1.1",
+    "vue": "^2.0.7",
+    "vue-router": "^2.1.1",
+    "vuex": "^2.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "clean-webpack-plugin": "^0.1.14",
+    "css-loader": "^0.25.0",
+    "glob": "^7.1.1",
+    "html-webpack-plugin": "^2.24.1",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.0.0",
+    "sass-loader": "^4.1.0",
+    "scss-loader": "0.0.1",
+    "serialize-javascript": "^1.3.0",
+    "serve-favicon": "^2.3.2",
+    "style-loader": "^0.13.1",
+    "vue-loader": "^9.9.5",
+    "vue-server-renderer": "^2.1.4",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}

@@ -1,0 +1,49 @@
+@import "reset.css";
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#page{
+  padding: 1rem;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 30vh;
+  max-height: 200px;
+  font-size: 2rem;
+  border-bottom: 1px solid #c7c7c7;
+
+  .nav{
+    display: flex;
+    flex-wrap: wrap;
+    >*{
+      padding: 1rem;
+      margin: 0 0.5rem;
+
+      color: #4990E2;
+      opacity: 0.7;
+      transition: opacity ease-in 0.2s;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+[class^=page-]{
+  text-align: center;
+
+  h1{
+    padding: 1rem;
+  }
+}
